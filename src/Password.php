@@ -14,7 +14,7 @@ final class Password
 
         //Add the uppercase letters
         for ($i = 0; $i < $UppercaseLetterAmount; $i++){
-            $password .= substr(str_shuffle(ucwords($this->letters)), 0, 1);
+            $password .= substr(str_shuffle(strtoupper($this->letters)), 0, 1);
         }
 
         //Add the lowercase letters
@@ -46,9 +46,14 @@ final class Password
         $this->password = str_shuffle($password);
     }
 
-    public static function generate(int $length, int $UppercaseLetterAmount, int $LowercaseLetterAmount, int $numberAmount, int $specialCharacterAmount)
+    public static function generate(int $length, int $UppercaseLetterAmount, int $LowercaseLetterAmount, int $numberAmount, int $specialCharacterAmount): Password
     {
         return new self($length, $UppercaseLetterAmount, $LowercaseLetterAmount, $numberAmount, $specialCharacterAmount);
+    }
+
+    public function getPassword(): string
+    {
+        return $this->password;
     }
 
     private function ensureIsValidInput(int $length, int $UppercaseLetterAmount, int $LowercaseLetterAmount, int $numberAmount, int $specialCharacterAmount): void
