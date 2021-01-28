@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mt-5">
-        <h1>Welcome to my Code Generator</h1>
+        <h1>Welcome to my Password Generator</h1>
         <form method="post" action="/">
             <div class="form-group">
                 <label for="length">Length:</label>
