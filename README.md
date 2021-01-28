@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/frederikpyt/Password-Generator/" target="_blank"><img src="https://github.com/frederikpyt/Password-Generator/blob/master/preview.png?raw=true" width="250"></a></p>
+<p align="center"><a href="https://github.com/frederikpyt/Password-Generator/" target="_blank"><img src="https://github.com/frederikpyt/Password-Generator/blob/master/preview.png?raw=true" width="1080"></a></p>
 
 ## Setup Guide
 1. Run the following in the root directory:
