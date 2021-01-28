@@ -6,6 +6,7 @@
         <form method="post" action="/">
             <div class="form-group">
                 <label for="length">Length:</label>
+                <small class="text-muted">(If larger than combined requirements, the remaining characters will be randomized.)</small>
                 <input class="form-control" type="number" min="0" name="length" id="length" value="{{ $length }}">
             </div>
 
